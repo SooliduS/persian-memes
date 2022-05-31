@@ -1,0 +1,51 @@
+.container{
+    height: calc(100vh - 50px);
+    padding:2rem;
+    padding-bottom:6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    overflow: auto;
+}
+.imageContainer{
+    background-color: blue;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.profilePic{
+    width: 100%;
+    height: 100%;
+}
+.cameraIcon{
+    position: relative;
+    bottom: 56px;
+    left: 59px;
+    font-size:25pt;
+    color:rgba(0,0,0,.6)
+}
+.info button{
+    margin-right:10px;
+    margin-bottom: 10px;
+}
+.bioContainer{
+display: flex;
+align-items: center;
+justify-content:center;
+
+}
+.bioContainer button{
+    margin: 10px;
+    margin-right:0;
+}
+.container button{
+    width: 100px
+}
+
+@media only screen and (max-width: 630px){
+    .bioContainer{
+        flex-direction: column;
+    }
+}

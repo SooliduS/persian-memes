@@ -1,0 +1,11 @@
+.container{
+    height:calc(100vh - 50px);
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:1.5rem;
+}
+.container span{
+    margin:.3rem
+}
