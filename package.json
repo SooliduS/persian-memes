@@ -1,0 +1,19 @@
+{
+  "name": "persian-mems",
+  "version": "1.0.0",
+  "description": "My first project",
+  "main": "/front/pages/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "persian-memes"
+  },
+  "keywords": [
+    "persian",
+    "memes",
+    "fun"
+  ],
+  "author": "Amirreza Setorg"
+}

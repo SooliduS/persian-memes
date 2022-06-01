@@ -1,0 +1,10 @@
+{
+    "explorer.sortOrder": "default",
+    "gitlens.views.fileHistory.files.layout": "auto",
+    "search.mode": "view",
+    "explorer.sortOrderLexicographicOptions": "default",
+    "workbench.tree.expandMode": "singleClick",
+    "npm.enableRunFromFolder": false,
+    "workbench.activityBar.iconClickBehavior": "toggle",
+    "workbench.iconTheme": "material-icon-theme"
+}
