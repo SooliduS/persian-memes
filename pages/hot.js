@@ -10,7 +10,7 @@ const Hot = () => {
     const [posts, setPosts] = useState([])
     const [isMounted, setIsMounted] = useState(false)
     const [isLoading, setIsLoading] = useState(true)
-    const [page, setPage] = useState(2)
+    const [page, setPage] = useState(2) 
 
     useEffect( async () => {
         try {

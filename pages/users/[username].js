@@ -5,6 +5,7 @@ import Post from '../../components/post/post'
 import Error from 'next/error'
 import { useEffect, useState } from 'react'
 import useAuth from '../../hooks/useAuth'
+import CircularProgress from '@mui/material/CircularProgress';
 
 const Users = (props) => {
     const axiosPrivate = useAxiosPrivate()
@@ -74,7 +75,8 @@ const Users = (props) => {
         setIsLoading(false)
     }
 
-    return (<>{!isMounted ? <p>Loading...</p> : error ? <Error statusCode={error.status} /> : <main className={styles.container}>
+    return ( <main className={styles.container}>
+        {!isMounted ? <div className='loadingContainer'><CircularProgress /></div> : error ? <Error statusCode={error.status} /> : <>
         <h3>{props.username}</h3>
         <pre>{props.bio}</pre>
         {!isFollowed && !isRequested && props.username !== auth.username && <button onClick={handleFollowRequest}>Follow</button>}
@@ -85,7 +87,8 @@ const Users = (props) => {
             {posts.length !== 0 ? posts.map(post => <Post post={post} key={`${post._id}`} />) : <p>no post yet</p>}
             <button onClick={handleLoadMore}>{!isLoading ? <span>Load more...</span> : <span>Loading...</span>}</button>
         </div>
-    </main>} </>);
+        </>}
+    </main> );
 }
 
 export default Users;
