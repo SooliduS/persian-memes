@@ -78,9 +78,9 @@ export default function Home() {
       {!isMounted ? <div className='loadingContainer'><CircularProgress /></div> : <>
         {auth.accessToken &&
           <div className={styles.addPostContainer}>
-            {addPostActive && <AddBoxIcon onClick={() => setAddPostActive(true)} className={styles.addPostIcon} />}
+            {!addPostActive && <AddBoxIcon onClick={() => setAddPostActive(true)} className={styles.addPostIcon} />}
             <div className={addPostActive ? styles.addPost : styles.addPostDeactive}><NewPost setNewPostAdded={setNewPostAdded} /></div>
-            {!addPostActive &&  <IndeterminateCheckBoxIcon onClick={() => setAddPostActive(false)} className={styles.addPostIcon} />}
+            {addPostActive &&  <IndeterminateCheckBoxIcon onClick={() => setAddPostActive(false)} className={styles.addPostIcon} />}
           </div>
         }
 
