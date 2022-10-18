@@ -82,7 +82,6 @@ const NewPost = ({ setNewPostAdded }) => {
             {error && <p className={styles.error}>{error}</p>}
             <form >
                 <input className={styles.title} placeholder='title...' value={title} onChange={e => setTitle(e.target.value)} />
-                <input type='file' onChange={handleAddFile} />
                 <TextareaAutosize
                     className={styles.textarea}
                     aria-label="new post"
