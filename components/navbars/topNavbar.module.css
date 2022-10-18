@@ -23,6 +23,7 @@
 .badge{
     background-color:rgba(248, 27, 27, 0.9);
     border-radius: 50%;
+    border:#222 solid 1px;
     width: 15px;
     height:15px;
     display: flex;
@@ -30,8 +31,8 @@
     justify-content: center;
     font-size:9pt;
     position: relative;
-    bottom: 18px;
-    left:17px;
+    bottom: 8px;
+    left:-15px;
     cursor: pointer;
     
 }
