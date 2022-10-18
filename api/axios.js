@@ -1,12 +1,12 @@
 import axios from 'axios';
 
 export default axios.create({
-    baseURL: 'http://localhost:3500/api',
+    baseURL: 'https://fathomless-fortress-01044.herokuapp.com/api',
     withCredentials: true,
     headers: { 'Content-Type': 'application/json' }
 });
 export const axiosPrivate = axios.create({
-    baseURL: 'http://localhost:3500/api',
+    baseURL: 'https://fathomless-fortress-01044.herokuapp.com/api',
     withCredentials: true,
     headers: { 'Content-Type': 'application/json'}
 });
